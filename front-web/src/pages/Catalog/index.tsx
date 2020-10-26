@@ -5,6 +5,7 @@ import ProductCard from "./components/ProductCard";
 import { makeRequest } from "core/utils/request";
 import ProductCardLoader from "./components/Loaders/ProductCardLoader";
 import "./styles.scss";
+import Pagination from "core/components/Pagination";
 
 const Catalog = () => {
   const [productsResponse, setProductsResponse] = useState<ProductsResponse>();
@@ -39,6 +40,7 @@ const Catalog = () => {
           ))
         )}
       </div>
+      <Pagination />
     </div>
   );
 };
